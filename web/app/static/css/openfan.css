@@ -1,0 +1,587 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Bree+Serif&display=swap");
+
+:root {
+    --color: #ff5252;
+    --t-color: #575757;
+    --d-c: #2d3436;
+}
+
+body {
+    
+    background-color: #e7ecf0;
+    word-wrap: break-word;
+    /*background */
+}
+
+
+
+
+nav {
+    font-family: "Bree Serif", serif;
+    background-color: #cbe4f4;
+    /*nav bar color*/
+    
+
+}
+
+.navbar-nav a {
+    font-weight: bold;
+    color: rgb(108, 104, 104);
+
+}
+
+
+
+img.tw-user-small {
+    height: 55px;
+    width: 55px;
+
+}
+
+img.tw-user-medium {
+    height: 60px;
+    width: 60px;
+}
+
+
+.content-box {
+    background-color: #ffffff;
+    margin-bottom: 0px;
+}
+
+.new-tweet-row {
+    background-color: #eaf5fe;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    justify-content: center;
+}
+
+.tweet {
+    background-color: #ffffff;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #edf1f4;
+    /*color line*/
+}
+
+.tweet-info {
+    word-wrap: break-word;
+    max-width: 57ch;
+
+}
+
+.tweet-username {
+    font-family: "Bree Serif", serif;
+    
+    font-weight: bold;
+    color: #0c195f;
+}
+
+.tweet-usertag {
+    font-family: Roboto;
+    
+}
+
+.tweet-arrow {
+    font-family: "Bree Serif", serif;
+    position: absolute;
+    left: 90%;
+    padding-right: 25px;
+}
+
+.tweet-text,
+.tweet-media {
+
+    word-break: break-word;
+    font-size: 26px;
+    padding-right: 10px;
+}
+
+/*span a container for date */
+.tweet-age {
+    font-family: "Bree Serif", serif;
+    position: relative;
+}
+
+.username {
+    
+    margin-left: 0.5rem;
+    font-weight: bold;
+}
+
+#subscribe {
+  color: #fff;
+  font-size: 1.2rem;
+  font-weight: bold;
+  padding: 0.5rem 1.5rem;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border-radius: 75px;
+  background-color: #67b1f9;
+}
+
+#subscribe:hover {
+  background-color: #93d2fb;
+}
+
+form#send_sub {
+  display: inline-block;
+  margin-left: 68%;
+}
+
+.stats {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.stats > div {
+  flex: 1;
+  text-align: center;
+  margin-bottom: 10px;
+  padding: 10px;
+  /* border: 1px solid gray; */
+}
+
+.stats .number {
+  font-weight: bold;
+  margin-right: 5px;
+}
+
+.stats .label {
+  font-size: 12px;
+  color: gray;
+}
+
+.tweet-age:before {
+    font-family: "Bree Serif", serif;
+    content: attr(data-text);
+    position: absolute;
+    font-size: small;
+    /* vertically center */
+    top: 50%;
+    transform: translateY(-50%);
+
+    /* move to right */
+    left: 60%;
+    margin-left: 10px;
+    /* and add a small left margin */
+
+    /* basic styles */
+    width: 160px;
+
+    padding: 5px;
+    border-radius: 10px;
+    background: #f9f6f6;
+    color: #000000;
+    text-align: center;
+
+    display: none;
+    /* hide by default */
+}
+
+.tweet-age:hover {
+    border-bottom: 1px solid #000000;
+}
+
+.tweet-age:hover:before {
+    display: block;
+}
+
+/*end of span a container for date */
+
+input[type=text],
+input[type=email],
+select,
+textarea {
+    width: 100%;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 12px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+
+
+
+
+button {
+    background-color: #67b1f9;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    font-size: smaller;
+    border-radius: 90px;
+    cursor: pointer;
+    
+    
+}
+input[type=submit]{
+    
+    font-family: "Bree Serif", serif;
+    background-color: #67b1f9;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    font-size:medium;
+    border-radius: 90px;
+    cursor: pointer;
+    float: right;
+    margin-right: 10px;
+    
+    
+}
+
+input[type=submit]:hover,
+#submit_form:hover {
+    background-color: #93d2fb;
+}
+
+#add_blog, #add_blog_notAuth {
+    font-family: "Bree Serif", serif;
+    left: 10%;
+    width: 80%;
+    border: none;
+    outline: none;
+    font-size: larger;
+    background-color: #88c4f5;
+    cursor: pointer;
+    position: relative;
+    z-index: 0;
+    border-radius: 90px;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+}
+
+#add_blog:hover, #add_blog_notAuth:hover  {
+    color: #0099ff;
+    background-color: #cecfd4;
+    transform: scale(1.15);
+    transition-delay: 0s;
+    transition-duration: 0.5s;
+}
+
+
+#submit_form,
+#clear_form,
+#cancel_form {
+    font-family: "Bree Serif", serif;
+    float: right;
+    margin-right: 10px;
+    
+    font-size: medium;
+    border-radius: 90px;
+    
+}
+
+#submit_form:hover,
+#clear_form:hover,
+#cancel_form:hover {
+    background-color: #93d2fb;
+}
+
+#blog-table {
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.dropdown {
+    position: relative;
+    float: right;
+    margin-right: 3%;
+
+}
+
+.dropdown-menu {
+    border-radius: 10%;
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 50px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-menu a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+
+.dropdown-item i {
+    padding-right: 8px;
+}
+
+.dropdown-item:hover {
+    color: #1933c7;
+    background-color: #a3a2a2;
+
+}
+
+#editBut, #editPassword{
+    font-family: "Bree Serif", serif;
+    font-size: 15px;
+    margin-top: 5%;
+   
+    background-color: #5bbdfe;
+    color: #ffffff;
+}
+
+#editBut:hover, #editPassword:hover{
+    color: #000000;
+    background-color: #b7b3b3;
+}  
+
+#googleAcc{
+    font-family: "Bree Serif", serif;
+    font-size: 15px;
+    margin-top: 5%;
+    background-color: #f44242;
+    color: #ffffff;
+}
+.card {
+    font-family: "Bree Serif", serif;
+    position: relative;
+    background-color: #f8f8f8;
+    border-radius: 10%;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 50px 40px;
+    width: 40%;
+    margin: 0 auto;
+    font-size: 20px;
+    
+}
+
+.card img {
+    border-radius: 50%;
+    float: center;
+    font-size: 900px;
+    margin-right: 10px;
+    
+}
+
+.card strong{
+    display: block;
+    margin-top: 15px;
+}
+
+.form-popup {
+    font-family: "Bree Serif", serif;
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+  
+.form-container {
+    font-family: "Bree Serif", serif;
+    border-radius: 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(255, 255, 255);
+    margin: 5% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 500px;
+}
+
+.form-container input[type = password]{
+    font-family: "Bree Serif", serif;
+    margin: 8px 0;
+    width: 65%;
+}
+
+.form-container input[type=text], .form-container input[type=email] {
+    font-family: "Bree Serif", serif;
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    
+}
+  
+.form-container button[type=submit] {
+    font-family: "Bree Serif", serif;
+    background-color:rgb(53, 53, 208);
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    cursor: pointer;
+    width: 25%;
+    margin-top: 30px;
+}
+
+.form-container button[type=submit]:hover {
+
+    background-color: darkblue;
+}
+  
+  
+#closeForm, #closeForm2 {
+    position: relative;
+    left: 45%;
+    color: #fff;
+    background-color: #3e3d3d;
+    font-size: 10px;
+    font-weight: bold;
+    text-align: center;
+    padding: 8px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+  
+#closeForm:hover, #closeForm2:hover {
+    background-color: #ff0000;
+}
+
+.flash-messages{
+    color: red;
+    font-size: 20px;
+
+}
+
+h2 {
+    width: 100%; 
+    text-align: center; 
+    border-bottom: 1px solid #000; 
+    line-height: 0.1em;
+    margin: 30px 0 30px; 
+ } 
+ 
+h2 span { 
+    background:#fff; 
+    padding:0 10px; 
+}
+
+h4 {
+    width: 100%; 
+    text-align: center; 
+    margin: 40px 0 0px; 
+ } 
+ 
+.button.is-google {
+    border-radius: 10px;
+    background-color: #f44242;
+    color: #fff;
+}
+  
+.button.is-google:hover {
+    background-color: #ff4a4a;
+}
+  
+.button.is-facebook {
+    border-radius: 10px;
+    background-color: #3f6ccd;
+    color: #fff;
+}
+  
+.button.is-facebook:hover {
+    background-color: #3e5ea5;
+}
+.button.is-block{
+    border-radius: 10px;
+}
+
+.sidebar {
+    position: absolute;
+   
+    right: 0;
+    
+    width: 240px;
+    
+
+  }
+
+
+
+.animated-text {
+    margin:0px;
+    text-align:center;
+  }
+  
+  #ani-container {
+    font-family: "Bree Serif", serif;
+    color:#999;
+    text-transform: uppercase;
+    font-size:30px;
+    font-weight:bold;
+    bottom:45%;
+    width:100%;
+    padding-top:20px;  
+    padding-bottom:20px;  
+    display:block;
+  }
+  
+  #flip {
+    height:40px;
+    overflow:hidden;
+  }
+  
+  #flip > div > div {
+    color:#fff;
+    padding:2px 6px;
+    height:45px;
+    margin-bottom:45px;
+    display:inline-block;
+  }
+  
+  #flip div:first-child {
+    animation: show 6s linear infinite;
+  }
+  
+  #flip div div {
+    background:#DC143C;
+  }
+  #flip div:first-child div {
+    background:#4ec7f3;
+  }
+  #flip div:last-child div {
+    background:#42c58a;
+  }
+  
+  @keyframes show {
+    0% {margin-top:-270px;}
+    5% {margin-top:-180px;}
+    33% {margin-top:-180px;}
+    38% {margin-top:-90px;}
+    66% {margin-top:-90px;}
+    71% {margin-top:0px;}
+    99.99% {margin-top:0px;}
+    100% {margin-top:-270px;}
+  }
+.custom-file-label {
+    position: absolute;
+    top: 0;
+   
+    left: 0;
+    z-index: 1;
+    height: calc(1.5em + .75rem + 2px);
+    padding: .375rem .75rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #fff;
+    border: 1px solid #ced4da;
+    border-radius: .25rem;
+}
